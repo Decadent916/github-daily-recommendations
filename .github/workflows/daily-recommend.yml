@@ -5,6 +5,9 @@ on:
     - cron: '30 1 * * *' # 每天 北京时间 9:30 点运行
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate-daily-recommend:
     runs-on: ubuntu-latest
